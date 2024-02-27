@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240224165143">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240227181117">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -224,7 +224,7 @@
 			<section class="aesthetics">
 				<div class="aesthetics__container pd-top-bottom">
 					<h2 class="pd-left-right">Естетика за вигідними цінами</h2>
-					<div class="pd-right-0 aesthetics__box">
+					<div class="aesthetics__box pd-right-0">
 						<div class="aesthetics__title__box pd-left-right">
 							<h3>Layout</h3>
 							<p>7$/m2</p>
@@ -369,13 +369,25 @@
 				</div>
 			</section>
 			<section class="example">
-				<div class="example__container pd-top-bottom">
+				<div class="example__container">
 					<h2 class="title pd-left-right">
 						Дизайн інтер'єру в сучасному стилі ЖК "Герцен-Парк"
 					</h2>
 					<div class="example__content">
-						<picture><source srcset="img/design1-mobile.webp" type="image/webp"><img src="img/design1-mobile.png" alt="" width="375" /></picture>
-						<p class="pd-left-right">
+						<picture class="example__grid--1">
+							<source srcset="img/design1-mobile.png" media="(max-width: 767px)" type="image/png" />
+							<source srcset="img/design1-tablet.png" media="(min-width: 768px) and (max-width: 1359px)" type="image/png" />
+							<source srcset="img/design1-desktop.png" media="(min-width: 1360px)" type="image/png" />
+							<img src="img/design1-mobile" alt="Дизайн" class="example__img--1" />
+						</picture>
+						<picture class="example__grid--2">
+							<source srcset="img/design2-mobile.png" media="(max-width: 767px)" type="image/png" />
+							<source srcset="img/design2-tablet.png" media="(min-width: 768px) and (max-width: 1359px)" type="image/png" />
+							<source srcset="img/design2-desktop.png" media="(min-width: 1360px)" type="image/png" />
+							<img src="img/design2-mobile" alt="Дизайн" class="example__img--2" />
+						</picture>
+
+						<p class="example__grid--4">
 							Перед командою “InspireDesign” була поставлена задача розробити
 							дизайн інтер'єру великої квартири для сім'ї з двома дітьми.
 							Головна мета - сучасний, функціональний просторий інтер'єр не
@@ -384,8 +396,7 @@
 							білого і бежевого, зручні м'які меблі в сучасному стилі і багато
 							світла. Велика квартира для дружної сім'ї з двома дітьми.
 						</p>
-						<picture><source srcset="img/design2-mobile.webp" type="image/webp"><img src="img/design2-mobile.png" alt="" width="375" /></picture>
-						<p class="pd-left-right">
+						<p class="example__grid--8">
 							І знову кращим варіантом в цьому випадку стало об'єднання
 							вітальні з кухнею та вітальні. Ми не помічаємо, як зони плавно
 							перетікають одна в іншу, дозволяючи не бути обмеженим у
@@ -395,15 +406,60 @@
 							При бажанні зі стелі опускається екран для перегляду кіно, а над
 							самим диваном розміщений проектор.
 						</p>
-						<picture><source srcset="img/design3-mobile.webp" type="image/webp"><img src="img/design3-mobile.png" alt="" width="375" /></picture>
-						<p class="pd-left-right">
+						<picture class="example__grid--3">
+							<source srcset="img/design3-mobile.png" media="(max-width: 767px)" type="image/png" />
+							<source srcset="img/design3-tablet.png" media="(min-width: 768px) and (max-width: 1359px)" type="image/png" />
+							<source srcset="img/design3-desktop.png" media="(min-width: 1360px)" type="image/png" />
+							<img src="img/design3-mobile" alt="Дизайн" class="example__img--3" />
+						</picture>
+						<picture class="example__grid--5">
+							<source srcset="img/design4-desktop.png" media="(min-width: 1360px)" type="image/png" />
+							<img src="img/design3-desktop.png" alt="Дизайн" class="example__img--5" />
+						</picture>
+						<picture class="example__grid--9">
+							<source srcset="img/design4-tablet.png" media="(min-width: 768px) and (max-width: 1359px)" type="image/png" />
+							<source srcset="img/design6-desktop.png" media="(min-width: 1360px)" type="image/png" />
+							<img src="img/design4-tablet" alt="Дизайн" class="example__img--9" />
+						</picture>
+						<picture class="example__grid--11">
+							<source srcset="img/design8-desktop.png" media="(min-width: 1360px)" type="image/png" />
+							<img src="img/design8-desktop.png" alt="Дизайн" class="example__img--11" />
+						</picture>
+						<picture class="example__grid--6">
+							<source srcset="img/design5-tablet.png" media="(min-width: 768px) and (max-width: 1359px)" type="image/png" />
+							<source srcset="img/design5-desktop.png" media="(min-width: 1360px)" type="image/png" />
+							<img src="img/design5-tablet" alt="Дизайн" class="example__img--6" />
+						</picture>
+						<p class="example__grid--7">
+							Основне завдання - практичний інтер'єру в сучасному стилі.Багато
+							білого, меблі функціональна і зручна, максимум простору!
+						</p>
+
+						<picture class="example__grid--10">
+							<source srcset="img/design7-desktop.png" media="(min-width: 768px)" type="image/png" />
+							<img src="img/ddesign7-desktop" alt="Дизайн" class="example__img--10" />
+						</picture>
+						<p class="example__grid--12">
+							Зону вітальні від передпокої відбиває прозорий стелаж для книг,
+							який зонирует простір і забезпечує комфорт усередині студії. З
+							вітальні шлях веде до дитячих, які розміщені в окремому крилі
+							подалі від хазяйської спальні. У них все, що потрібно для
+							сучасних хлопчиків. Просторі кімнати з великою кількістю місця
+							на стінах для плакатів з улюбленими героями з книг, фільмів та
+							ігор.
+						</p>
+						<p class="example__grid--13">
 							У господарській спальні є ліжко і шафа. Нічого зайвого! Для
 							зручності ми спроектували вхід з коридору і студії. Через двері
 							зі студії можна швидко пройти на лоджію і попити кави за
 							комфортним столиком біля вікна.
 						</p>
+						<picture class="example__grid--14">
+							<source srcset="img/design6-tablet.png" media="(min-width: 768px) and (max-width: 1359px)" type="image/png" />
+							<source srcset="img/design9-desktop.png" media="(min-width: 1360px)" type="image/png" />
+							<img src="img/design6-tablet" alt="Дизайн" class="example__img--14" />
+						</picture>
 					</div>
-
 					<div class="example__button__box pd-left-right">
 						<button type="button" class="button">
 							Замовити консультацію
@@ -416,13 +472,46 @@
 					</div>
 				</div>
 			</section>
+			<!-- <section class="feedback">
+          <div class="feedback__container pd-top-bottom pd-left-right">
+            <h2 class="feedback__title">Враження від дизайну</h2>
+          </div>
+        </section> -->
+			<div class="form pd-top-bottom form__container">
+				<!-- <div class="form__container"> -->
+				<h2 class="title form__title pd-left-right">
+					Не знайшли відповідь на своє питання?
+				</h2>
+				<div class="form__content pd-left-right">
+					<p class="form__content__text">
+						Заповніть форму і наші фахівці зв’яжуться з вами протягом 15
+						хвилин та з задоволенням нададуть вам вичерпну відповідь.
+					</p>
+					<picture>
+						<source srcset="img/form1__mobile.png" media="(max-width: 767px)" type="image/png" />
+						<source srcset="img/form1__tablet.png" media="(min-width: 768px) and (max-width: 1199px)" type="image/png" />
+						<source srcset="img/form1__desktop.png" media="(min-width: 1200px)" type="image/png" />
+						<img src="img/form1__mobile.png" alt="Дизайн" class="form__img" data-da=".form__container, 768" />
+					</picture>
+					<picture>
+						<source srcset="img/form2__tablet.png" media="(min-width: 768px) and (max-width: 1199px)" type="image/png" />
+						<source srcset="img/form2__desktop.png" media="(min-width: 1200px)" type="image/png" />
+						<img src="img/form1__mobile.png" alt="Дизайн" class="form__img--2" />
+					</picture>
+				</div>
+				<form action="files/sendmail/sendmail.php" method="POST">
+					<input type="text" name="form[email]" data-error="Error" placeholder="E-mail" class="input" />
+					<button type="submit" class="button">Send</button>
+				</form>
+				<!-- </div> -->
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240224165143"></script>
+	<script src="js/app.min.js?_v=20240227181117"></script>
 </body>
 
 </html>
