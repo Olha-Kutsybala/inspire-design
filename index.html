@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240229143856">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240303154039">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,13 +26,13 @@
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="#" data-goto=".main" class="menu__link">Головна</a>
+								<a href="#" data-goto=".hero" class="menu__link">Головна</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" data-goto=".servises" class="menu__link">Послуги</a>
+								<a href="#" data-goto=".aesthetics" class="menu__link">Послуги</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" data-goto=".project" class="menu__link">Проєкти</a>
+								<a href="#" data-goto=".example" class="menu__link">Проєкти</a>
 							</li>
 							<li class="menu__item">
 								<a href="#" data-goto=".feedback" class="menu__link">Відгуки</a>
@@ -41,7 +41,7 @@
 								<a href="#" data-goto=".blog" class="menu__link">Блог</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" data-goto=".about" class="menu__link">Про нас</a>
+								<a href="#" data-goto=".descr" class="menu__link">Про нас</a>
 							</li>
 							<li class="menu__item">
 								<a href="#" data-goto=".faq" class="menu__link">FAQ</a>
@@ -472,11 +472,229 @@
 					</div>
 				</div>
 			</section>
-			<!-- <section class="feedback">
-          <div class="feedback__container pd-top-bottom pd-left-right">
-            <h2 class="feedback__title">Враження від дизайну</h2>
-          </div>
-        </section> -->
+			<section class="feedback">
+				<div class="feedback__container pd-top-bottom">
+					<h2 class="feedback__title title pd-left-right">
+						Враження від дизайну
+					</h2>
+					<div class="feedback__slider swiper">
+						<div class="feedback__wrapper swiper-wrapper">
+							<div class="feedback__slide swiper-slide">
+								<div class="feedback__name__box">
+									<picture><source srcset="img/feedback1.webp" type="image/webp"><img src="img/feedback1.png" alt="Фото людини" width="63" height="63" /></picture>
+									<div>
+										<h3 class="feedback__name">Марина</h3>
+										<p class="feedback__date">10.06.2023</p>
+									</div>
+								</div>
+								<p class="c-rate">
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+								</p>
+								<p class="feedback__text">
+									Робота з вашою компанією була справжнім задоволенням!
+									Професіоналізм вашої команди та унікальний підхід до дизайну
+									створили неймовірний результат. Кожен етап проекту був
+									детально продуманий, а ваші рекомендації та ідеї додали
+									стильності та гармонії нашому інтер'єру. Дякую за велику
+									увагу до деталей та особистий супровід. Рекомендую вашу
+									компанію всім, хто шукає професійний та неперевершений
+									дизайн інтер'єру!
+								</p>
+							</div>
+							<div class="feedback__slide swiper-slide">
+								<div class="feedback__name__box">
+									<picture><source srcset="img/feedback2.webp" type="image/webp"><img src="img/feedback2.png" alt="Фото людини" width="63" height="63" /></picture>
+									<div>
+										<h3 class="feedback__name">Дмитро</h3>
+										<p class="feedback__date">15.04.2023</p>
+									</div>
+								</div>
+								<p class="c-rate">
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+								</p>
+								<p class="feedback__text">
+									Завдяки співпраці з вашою компанією, ми отримали ідеальний
+									дизайн для нашого приміщення. Ваші дизайнери проявили чудове
+									розуміння наших потреб та бажань, та втілили їх у
+									неперевершений інтер'єр. Ваш професіоналізм, креативність та
+									уважність до деталей залишили велике враження. Дякуємо вам
+									за чудову співпрацю та за те, що перевершили наші
+									очікування!
+								</p>
+							</div>
+							<div class="feedback__slide swiper-slide">
+								<div class="feedback__name__box">
+									<picture><source srcset="img/feedback3.webp" type="image/webp"><img src="img/feedback3.png" alt="Фото людини" width="63" height="63" /></picture>
+									<div>
+										<h3 class="feedback__name">Жанна</h3>
+										<p class="feedback__date">25.02.2023</p>
+									</div>
+								</div>
+								<p class="c-rate">
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+								</p>
+								<p class="feedback__text">
+									Співпраця з вашою компанією була надзвичайно приємною та
+									результативною. Ви змогли зрозуміти наш власний стиль та
+									пристосувати його до наших потреб. Ваша команда підійшла до
+									проекту з великою відповідальністю, професіоналізмом та
+									креативністю. Результат перевершив наші очікування, і ми
+									насолоджуємося кожною деталлю нашого нового інтер'єру.
+									Дякуємо вам за чудову роботу та за вашу експертизу!
+								</p>
+							</div>
+							<div class="feedback__slide swiper-slide">
+								<div class="feedback__name__box">
+									<picture><source srcset="img/feedback1.webp" type="image/webp"><img src="img/feedback1.png" alt="Фото людини" width="63" height="63" /></picture>
+									<div>
+										<h3 class="feedback__name">Марина</h3>
+										<p class="feedback__date">10.06.2023</p>
+									</div>
+								</div>
+								<p class="c-rate">
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+								</p>
+								<p class="feedback__text">
+									Робота з вашою компанією була справжнім задоволенням!
+									Професіоналізм вашої команди та унікальний підхід до дизайну
+									створили неймовірний результат. Кожен етап проекту був
+									детально продуманий, а ваші рекомендації та ідеї додали
+									стильності та гармонії нашому інтер'єру. Дякую за велику
+									увагу до деталей та особистий супровід. Рекомендую вашу
+									компанію всім, хто шукає професійний та неперевершений
+									дизайн інтер'єру!
+								</p>
+							</div>
+							<div class="feedback__slide swiper-slide">
+								<div class="feedback__name__box">
+									<picture><source srcset="img/feedback2.webp" type="image/webp"><img src="img/feedback2.png" alt="Фото людини" width="63" height="63" /></picture>
+									<div>
+										<h3 class="feedback__name">Дмитро</h3>
+										<p class="feedback__date">15.04.2023</p>
+									</div>
+								</div>
+								<p class="c-rate">
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+								</p>
+								<p class="feedback__text">
+									Завдяки співпраці з вашою компанією, ми отримали ідеальний
+									дизайн для нашого приміщення. Ваші дизайнери проявили чудове
+									розуміння наших потреб та бажань, та втілили їх у
+									неперевершений інтер'єр. Ваш професіоналізм, креативність та
+									уважність до деталей залишили велике враження. Дякуємо вам
+									за чудову співпрацю та за те, що перевершили наші
+									очікування!
+								</p>
+							</div>
+							<div class="feedback__slide swiper-slide">
+								<div class="feedback__name__box">
+									<picture><source srcset="img/feedback3.webp" type="image/webp"><img src="img/feedback3.png" alt="Фото людини" width="63" height="63" /></picture>
+									<div>
+										<h3 class="feedback__name">Жанна</h3>
+										<p class="feedback__date">25.02.2023</p>
+									</div>
+								</div>
+								<p class="c-rate">
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+									<svg class="c-icon" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+								</p>
+								<p class="feedback__text">
+									Співпраця з вашою компанією була надзвичайно приємною та
+									результативною. Ви змогли зрозуміти наш власний стиль та
+									пристосувати його до наших потреб. Ваша команда підійшла до
+									проекту з великою відповідальністю, професіоналізмом та
+									креативністю. Результат перевершив наші очікування, і ми
+									насолоджуємося кожною деталлю нашого нового інтер'єру.
+									Дякуємо вам за чудову роботу та за вашу експертизу!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<div class="form__section pd-top-bottom form__section__container">
 				<h2 class="title form__section__title pd-left-right">
 					Не знайшли відповідь на своє питання?
@@ -517,12 +735,10 @@
 					</form>
 				</div>
 			</div>
-			<section class="contact pd-top-bottom  pd-left-right contact__container">
-				<h2 class="title contact__title">
-					Знайди нас тут
-				</h2>
+			<section class="contact pd-top-bottom pd-left-right contact__container">
+				<h2 class="title contact__title">Знайди нас тут</h2>
 				<div class="contact__content">
-					<iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.1272742927217!2d24.02121997553499!3d49.84006603112601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add71bb8b769f%3A0x9737c7983badf4b1!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgMTUsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1709126472657!5m2!1suk!2sua" width="288" height="192" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.1272742927217!2d24.02121997553499!3d49.84006603112601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add71bb8b769f%3A0x9737c7983badf4b1!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgMTUsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1709126472657!5m2!1suk!2sua" width="288" height="192" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					<div>
 						<address>
 							<ul class="contact__list">
@@ -540,10 +756,12 @@
 										</svg>
 										+ 380 66 785 37 45</a>
 								</li>
-								<li><a href="mailto: inspiredesign.lviv @gmail.com" lang="en" class="flex contact__list__item"><svg width="32" height="32">
+								<li>
+									<a href="mailto: inspiredesign.lviv @gmail.com" lang="en" class="flex contact__list__item"><svg width="32" height="32">
 											<use xlink:href="img/icons/icons.svg#mail"></use>
 										</svg>
-										inspiredesign.lviv @gmail.com</a></li>
+										inspiredesign.lviv @gmail.com</a>
+								</li>
 								<li>
 									<ul class="social flex contact__list__item">
 										<li class="social__item">
@@ -578,20 +796,114 @@
 								</li>
 							</ul>
 						</address>
-						<button type="button" class="button  contact__button">
+						<button type="button" class="button contact__button">
 							Зв’язатись
 						</button>
 					</div>
-
 				</div>
-
+			</section>
 		</main>
 		<footer class="footer">
-			<div class="footer__container">
+			<div class="footer__container pd-left-right">
+				<div class="footer__content">
+					<div class="footer__logo__content" data-da=".footer__container, 1199">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img class="logo" src="img/logo.png" alt="Лого" /></picture>
+
+						<ul class="copirate__list">
+							<li class="copirate__item__text">Творчий вимір інтер'єру</li>
+							<li class="copirate__item">2035 © Усі права захищені</li>
+						</ul>
+					</div>
+					<nav class="footer__nav">
+						<ul class="footer__nav__list">
+							<li class="footer__nav__item">
+								<a href="#" data-goto=".hero" class="menu__link">Головна</a>
+							</li>
+							<li class="footer__nav__item">
+								<a href="#" data-goto=".aesthetics" class="menu__link">Послуги</a>
+							</li>
+							<li class="footer__nav__item">
+								<a href="#" data-goto=".example" class="menu__link">Проєкти</a>
+							</li>
+							<li class="footer__nav__item">
+								<a href="#" data-goto=".feedback" class="menu__link">Відгуки</a>
+							</li>
+							<li class="footer__nav__item">
+								<a href="#" data-goto=".blog" class="menu__link">Блог</a>
+							</li>
+							<li class="footer__nav__item">
+								<a href="#" data-goto=".descr" class="menu__link">Про нас</a>
+							</li>
+							<li class="footer__nav__item">
+								<a href="#" data-goto=".faq" class="menu__link">FAQ</a>
+							</li>
+							<li class="footer__nav__item">
+								<a href="#" data-goto=".contact" class="menu__link">Контакти</a>
+							</li>
+						</ul>
+					</nav>
+					<address>
+						<ul class="contact__list">
+							<li>
+								<a href="https://maps.app.goo.gl/gLsasD6VWMZvZX9X9" class="flex contact__list__item" target="_blank" rel="noopener noreferrer nofollow">
+									<svg width="24" height="24">
+										<use xlink:href="img/icons/icons.svg#map"></use>
+									</svg>
+									м. Львів, вул. Січових Стрільців, 15</a>
+							</li>
+							<li>
+								<a href="tel:+380667853745" class="flex contact__list__item">
+									<svg width="24" height="24">
+										<use xlink:href="img/icons/icons.svg#phone"></use>
+									</svg>
+									+ 380 66 785 37 45</a>
+							</li>
+							<li>
+								<a href="mailto: inspiredesign.lviv @gmail.com" lang="en" class="flex contact__list__item"><svg width="24" height="24">
+										<use xlink:href="img/icons/icons.svg#mail"></use>
+									</svg>
+									inspiredesign.lviv @gmail.com</a>
+							</li>
+							<li>
+								<ul class="social flex contact__list__item">
+									<li class="social__item">
+										<a href="" class="social__link">
+											<svg width="24" height="24">
+												<use xlink:href="img/icons/icons.svg#instagram"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social__item">
+										<a href="" class="social__link">
+											<svg width="24" height="24">
+												<use xlink:href="img/icons/icons.svg#telegram"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social__item">
+										<a href="" class="social__link">
+											<svg width="24" height="24">
+												<use xlink:href="img/icons/icons.svg#facebook"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="social__item">
+										<a href="" class="social__link">
+											<svg width="24" height="24">
+												<use xlink:href="img/icons/icons.svg#tiktok"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</address>
+				</div>
 			</div>
 		</footer>
+
 	</div>
-	<script src="js/app.min.js?_v=20240229143856"></script>
+	<script src="js/app.min.js?_v=20240303154039"></script>
 </body>
 
 </html>

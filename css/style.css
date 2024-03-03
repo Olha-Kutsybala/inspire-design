@@ -645,6 +645,91 @@ textarea.input {
   }
 }
 
+.footer__container {
+  padding-bottom: 4.5rem;
+}
+@media (min-width: 47.99875em) {
+  .footer__container {
+    padding-bottom: 9.375rem;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__container {
+    padding-bottom: 7.1875rem;
+  }
+}
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
+}
+@media (min-width: 47.99875em) {
+  .footer__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 5.625rem;
+  }
+}
+.footer .contact__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__nav__list {
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2;
+}
+@media (max-width: 47.99875em) {
+  .footer__nav__list {
+    max-width: 13.125rem;
+  }
+}
+.footer__nav__item:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+.footer .logo {
+  margin-bottom: 1.25rem;
+}
+
+.copirate__list {
+  font-family: "Philosopher";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
+  line-height: 136%;
+  letter-spacing: 0.12em;
+}
+@media (min-width: 47.99875em) {
+  .copirate__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .copirate__item__text {
+    display: none;
+  }
+}
+
 @media (min-width: 100em) {
   .hero__container {
     padding-top: 10.25rem;
@@ -707,6 +792,10 @@ textarea.input {
     display: none;
   }
 }
+.hero p {
+  max-width: 34.375rem;
+  margin-bottom: 2.5rem;
+}
 .hero__image__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -738,6 +827,9 @@ textarea.input {
   }
 }
 
+.descr {
+  line-height: 136%;
+}
 @media (min-width: px) {
   .descr__container {
     max-width: 1600px;
@@ -752,6 +844,18 @@ textarea.input {
   .descr li img {
     margin-bottom: 0;
     height: auto;
+  }
+}
+.descr h3 {
+  font-weight: 600;
+  font-size: 1.375rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 1.25rem;
+}
+@media (min-width: 47.99875em) {
+  .descr h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.875rem;
   }
 }
 .descr__item {
@@ -907,23 +1011,22 @@ textarea.input {
   }
 }
 
-.hero p {
-  max-width: 34.375rem;
-}
-
-.aesthetics h2 {
+.aesthetics {
   line-height: 136%;
-}
-@media (max-width: 47.99875em) {
-  .aesthetics h2 {
-    margin-bottom: 2.5rem;
-  }
 }
 .aesthetics h3, .aesthetics p {
   margin-bottom: 0;
 }
 .aesthetics h3 {
-  line-height: 1;
+  line-height: 1.1;
+  font-weight: 600;
+  font-size: 1.375rem;
+  letter-spacing: 0.12em;
+}
+@media (min-width: 47.99875em) {
+  .aesthetics h3 {
+    font-size: 1.5rem;
+  }
 }
 .aesthetics__box:nth-child(2n) {
   margin-bottom: 2.5rem;
@@ -1110,12 +1213,6 @@ textarea.input {
   }
 }
 
-@media (max-width: 47.99875em) {
-  .example h2 {
-    margin-bottom: 2.5rem;
-    line-height: 136%;
-  }
-}
 .example__content {
   display: -ms-grid;
   display: grid;
@@ -1757,15 +1854,6 @@ textarea.input {
   }
 }
 
-.form__section h2 {
-  margin-bottom: 2.5rem;
-  line-height: 136%;
-}
-@media (min-width: 47.99875em) {
-  .form__section h2 {
-    margin-bottom: 3.125rem;
-  }
-}
 @media (max-width: 47.99875em) {
   .form__section p {
     margin-bottom: 2.5rem;
@@ -1867,14 +1955,6 @@ textarea.input {
     gap: 1.875rem;
   }
 }
-.contact h2 {
-  margin-bottom: 2.5rem;
-}
-@media (min-width: 47.99875em) {
-  .contact h2 {
-    margin-bottom: 3.125rem;
-  }
-}
 .contact__map {
   margin-bottom: 1.875rem;
   width: 100%;
@@ -1927,17 +2007,63 @@ textarea.input {
 .contact__list__item {
   gap: 0.5rem;
   fill: #fff;
+  line-height: 136%;
 }
 .contact__button {
   width: 8.25rem;
   color: #fff;
 }
 
+@media (max-width: 47.99875em) {
+  .feedback__slider {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.feedback__slide {
+  border: 1px solid #cba771;
+  padding: 0.9375rem 0.625rem;
+  line-height: 136%;
+  letter-spacing: 0.12em;
+}
+@media (min-width: 47.99875em) {
+  .feedback__slide {
+    padding: 1.875rem 1.25rem 3.125rem;
+  }
+}
+.feedback__name__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.25rem;
+}
+.feedback__name {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.feedback__date {
+  font-size: 0.9375rem;
+  color: #989898;
+}
+
+.c-rate {
+  margin-bottom: 1.875rem;
+}
+
+.c-icon {
+  fill: #cba771;
+}
+
 .descr h2::after,
 .aesthetics h2::after,
 .example h2::after,
 .form__section h2::after,
-.contact h2::after {
+.contact h2::after,
+.feedback h2::after {
   content: "";
   display: block;
   height: 2px;
@@ -1952,7 +2078,8 @@ textarea.input {
 .aesthetics h2,
 .example h2,
 .form__section h2,
-.contact h2 {
+.contact h2,
+.feedback h2 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 95% 10%;
@@ -1961,30 +2088,63 @@ textarea.input {
   font-family: "Philosopher";
   font-size: 1.75rem;
   letter-spacing: 0.12em;
+  margin-bottom: 2.5rem;
 }
 @media (min-width: 47.99875em) {
   .descr h2,
   .aesthetics h2,
   .example h2,
   .form__section h2,
-  .contact h2 {
+  .contact h2,
+  .feedback h2 {
     font-size: 2.5rem;
     margin-bottom: 3.125rem;
   }
 }
-
-.descr h3,
-.aesthetics h3 {
-  line-height: 136%;
-  font-weight: 600;
-  font-size: 1.375rem;
-  letter-spacing: 0.12em;
-  margin-bottom: 1.25rem;
+.swiper {
+  overflow: hidden;
 }
-@media (min-width: 47.99875em) {
-  .descr h3,
-  .aesthetics h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1.875rem;
-  }
+
+.swiper-initialized {
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.swiper-vertical .swiper-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.swiper-autoheight .swiper-wrapper {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.swiper-initialized .swiper-slide {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.swiper-android .swiper-slide,
+.swiper-android .swiper-wrapper {
+  -webkit-transform: translate3d(0px, 0, 0);
+          transform: translate3d(0px, 0, 0);
+}
+
+.swiper-button-lock {
+  display: none !important;
 }
