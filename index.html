@@ -6,19 +6,23 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240303154039">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240306210235">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-	<div class="wrapper">
+	<div id="overlay"></div>
+	<div id="logo-container">
+		<picture><source srcset="img/first-logo.webp" type="image/webp"><img src="img/first-logo.png" alt="Лого" /></picture>
+	</div>
+	<div class="wrapper" id="content">
 		<header class="header">
 			<div class="header__container pd-left-right">
-				<div class="logo">
-					<picture><source srcset="img/logo.webp" type="image/webp"><img class="logo" src="img/logo.png" alt="Лого" /></picture>
-				</div>
+				<a href="#">
+					<picture><source srcset="img/logo.webp" type="image/webp"><img class="header__logo" src="img/logo.png" alt="Лого" /></picture>
+				</a>
 				<div class="header__menu menu flex flex--gap30">
 					<button type="button" class="menu__icon icon-menu">
 						<span></span>
@@ -65,7 +69,7 @@
 							</svg>
 						</li>
 					</ul>
-					<button type="button" class="button button--gold" data-da=".menu__body, 992, 2">
+					<button type="button" class="button button--gold" data-da=".menu__body, 767, 2">
 						Зв’язатись
 					</button>
 				</div>
@@ -78,7 +82,9 @@
 					<div>
 						<div class="hero__content pd-left-right">
 							<h1 class="hero__title">Інтер'єр вашої мрії</h1>
-							<img src="img/icons/decor.svg" alt="decor" class="hero__decor" />
+							<!-- <div class="hero__decor"> -->
+							<picture><source srcset="img/hero__tablet__decor.webp" type="image/webp"><img class="hero__decor" src="img/hero__tablet__decor.png" alt="" /></picture>
+							<!-- </div> -->
 							<p>
 								Наша компанія перетворить ваші мрії в реальність. <br />
 								Запрошуємо зробити перший крок до ідеального інтер'єру!
@@ -120,11 +126,9 @@
           " class="image__mobile"></div>
 			<section class="descr">
 				<div class="descr__container pd-top-bottom pd-left-right">
-					<!-- <div class="pd-left-right"> -->
-					<h2>Дизайн на висоті</h2>
-					<!-- </div> -->
+					<h2 class="title">Дизайн на висоті</h2>
 					<ul>
-						<li class="descr__item">
+						<li data-watch data-watch-once class="descr__item">
 							<div class="descr__black__box">
 								<h3>Інноваційні рішення</h3>
 								<p>
@@ -138,11 +142,11 @@
 								<source srcset="img/descr-tablet1.png" media="(min-width: 768px) and (max-width: 1199px)" type="image/png" width="513" />
 								<source srcset="img/descr-desktop1.png" media="(min-width: 1200px)" type="image/png" width="584" />
 
-								<img src="img/descr1-mobile.png" alt="design" width="100%" />
+								<img src="img/descr1-mobile.png" alt="design" width="100%" loading="lazy" />
 							</picture>
 							<!-- <picture><source srcset="img/descr1-mobile.webp" type="image/webp"><img src="img/descr1-mobile.png" alt="design" /></picture> -->
 						</li>
-						<li class="descr__item">
+						<li data-watch data-watch-once class="descr__item">
 							<div class="descr__black__box">
 								<h3>Повний супровід проекту</h3>
 								<p>
@@ -157,11 +161,11 @@
 								<source srcset="img/descr-tablet2.png" media="(min-width: 768px) and (max-width: 1199px)" type="image/png" width="435" />
 								<source srcset="img/descr-desktop2.png" media="(min-width: 1200px)" type="image/png" width="815" />
 
-								<img src="img/descr2-mobile.png" alt="design" width="100%" />
+								<img src="img/descr2-mobile.png" alt="design" width="100%" loading="lazy" />
 							</picture>
 							<!-- <picture><source srcset="img/descr2-mobile.webp" type="image/webp"><img src="img/descr2-mobile.png" alt="design" /></picture> -->
 						</li>
-						<li class="descr__item">
+						<li data-watch data-watch-once class="descr__item">
 							<div class="descr__black__box">
 								<h3>Широкий спектр послуг</h3>
 								<p>
@@ -176,11 +180,11 @@
 								<source srcset="img/descr-tablet3.png" media="(min-width: 768px) and (max-width: 1199px)" type="image/png" width="333" />
 								<source srcset="img/descr-desktop3.png" media="(min-width: 1200px)" type="image/png" width="584" />
 
-								<img src="img/descr3-mobile.png" alt="design" width="100%" />
+								<img src="img/descr3-mobile.png" alt="design" width="100%" loading="lazy" />
 							</picture>
 							<!-- <picture><source srcset="img/descr3-mobile.webp" type="image/webp"><img src="img/descr3-mobile.png" alt="design" /></picture> -->
 						</li>
-						<li class="descr__item">
+						<li data-watch data-watch-once class="descr__item">
 							<div class="descr__black__box">
 								<h3>Кращі ціни та бюджетний контроль</h3>
 								<p>
@@ -195,11 +199,11 @@
 								<source srcset="img/descr-tablet4.png" media="(min-width: 768px) and (max-width: 1199px)" type="image/png" width="435" />
 								<source srcset="img/descr-desktop4.png" media="(min-width: 1200px)" type="image/png" width="815" />
 
-								<img src="img/descr4-mobile.png" alt="design" width="100%" />
+								<img src="img/descr4-mobile.png" alt="design" width="100%" loading="lazy" />
 							</picture>
 							<!-- <picture><source srcset="img/descr4-mobile.webp" type="image/webp"><img src="img/descr4-mobile.png" alt="design" /></picture> -->
 						</li>
-						<li class="descr__item">
+						<li data-watch data-watch-once class="descr__item">
 							<div class="descr__black__box">
 								<h3>Розширена гарантія</h3>
 								<p>
@@ -214,16 +218,16 @@
 								<source srcset="img/descr-tablet5.png" media="(min-width: 768px) and (max-width: 1199px)" type="image/png" width="333" />
 								<source srcset="img/descr-desktop5.png" media="(min-width: 1200px)" type="image/png" width="584" />
 
-								<img src="img/descr5-mobile.png" alt="design" width="100%" />
+								<img src="img/descr5-mobile.png" alt="design" width="100%" loading="lazy" />
 							</picture>
 							<!-- <picture><source srcset="img/descr5-mobile.webp" type="image/webp"><img src="img/descr5-mobile.png" alt="design" /></picture> -->
 						</li>
 					</ul>
 				</div>
 			</section>
-			<section class="aesthetics">
+			<section class="aesthetics" data-watch data-watch-once>
 				<div class="aesthetics__container pd-top-bottom">
-					<h2 class="pd-left-right">Естетика за вигідними цінами</h2>
+					<h2 class="title pd-left-right">Естетика за вигідними цінами</h2>
 					<div class="aesthetics__box pd-right-0">
 						<div class="aesthetics__title__box pd-left-right">
 							<h3>Layout</h3>
@@ -368,7 +372,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="example">
+			<section data-watch data-watch-once class="example">
 				<div class="example__container">
 					<h2 class="title pd-left-right">
 						Дизайн інтер'єру в сучасному стилі ЖК "Герцен-Парк"
@@ -378,13 +382,13 @@
 							<source srcset="img/design1-mobile.png" media="(max-width: 767px)" type="image/png" />
 							<source srcset="img/design1-tablet.png" media="(min-width: 768px) and (max-width: 1359px)" type="image/png" />
 							<source srcset="img/design1-desktop.png" media="(min-width: 1360px)" type="image/png" />
-							<img src="img/design1-mobile" alt="Дизайн" class="example__img--1" />
+							<img src="img/design1-mobile" alt="Дизайн" class="example__img--1" loading="lazy" />
 						</picture>
 						<picture class="example__grid--2">
 							<source srcset="img/design2-mobile.png" media="(max-width: 767px)" type="image/png" />
 							<source srcset="img/design2-tablet.png" media="(min-width: 768px) and (max-width: 1359px)" type="image/png" />
 							<source srcset="img/design2-desktop.png" media="(min-width: 1360px)" type="image/png" />
-							<img src="img/design2-mobile" alt="Дизайн" class="example__img--2" />
+							<img src="img/design2-mobile" alt="Дизайн" class="example__img--2" loading="lazy" />
 						</picture>
 
 						<p class="example__grid--4">
@@ -410,25 +414,25 @@
 							<source srcset="img/design3-mobile.png" media="(max-width: 767px)" type="image/png" />
 							<source srcset="img/design3-tablet.png" media="(min-width: 768px) and (max-width: 1359px)" type="image/png" />
 							<source srcset="img/design3-desktop.png" media="(min-width: 1360px)" type="image/png" />
-							<img src="img/design3-mobile" alt="Дизайн" class="example__img--3" />
+							<img src="img/design3-mobile" alt="Дизайн" class="example__img--3" loading="lazy" />
 						</picture>
 						<picture class="example__grid--5">
 							<source srcset="img/design4-desktop.png" media="(min-width: 1360px)" type="image/png" />
-							<img src="img/design3-desktop.png" alt="Дизайн" class="example__img--5" />
+							<img src="img/design3-desktop.png" alt="Дизайн" class="example__img--5" loading="lazy" />
 						</picture>
 						<picture class="example__grid--9">
 							<source srcset="img/design4-tablet.png" media="(min-width: 768px) and (max-width: 1359px)" type="image/png" />
 							<source srcset="img/design6-desktop.png" media="(min-width: 1360px)" type="image/png" />
-							<img src="img/design4-tablet" alt="Дизайн" class="example__img--9" />
+							<img src="img/design4-tablet" alt="Дизайн" class="example__img--9" loading="lazy" />
 						</picture>
 						<picture class="example__grid--11">
 							<source srcset="img/design8-desktop.png" media="(min-width: 1360px)" type="image/png" />
-							<img src="img/design8-desktop.png" alt="Дизайн" class="example__img--11" />
+							<img src="img/design8-desktop.png" alt="Дизайн" class="example__img--11" loading="lazy" />
 						</picture>
 						<picture class="example__grid--6">
 							<source srcset="img/design5-tablet.png" media="(min-width: 768px) and (max-width: 1359px)" type="image/png" />
 							<source srcset="img/design5-desktop.png" media="(min-width: 1360px)" type="image/png" />
-							<img src="img/design5-tablet" alt="Дизайн" class="example__img--6" />
+							<img src="img/design5-tablet" alt="Дизайн" class="example__img--6" loading="lazy" />
 						</picture>
 						<p class="example__grid--7">
 							Основне завдання - практичний інтер'єру в сучасному стилі.Багато
@@ -437,7 +441,7 @@
 
 						<picture class="example__grid--10">
 							<source srcset="img/design7-desktop.png" media="(min-width: 768px)" type="image/png" />
-							<img src="img/ddesign7-desktop" alt="Дизайн" class="example__img--10" />
+							<img src="img/ddesign7-desktop" alt="Дизайн" class="example__img--10" loading="lazy" />
 						</picture>
 						<p class="example__grid--12">
 							Зону вітальні від передпокої відбиває прозорий стелаж для книг,
@@ -457,7 +461,7 @@
 						<picture class="example__grid--14">
 							<source srcset="img/design6-tablet.png" media="(min-width: 768px) and (max-width: 1359px)" type="image/png" />
 							<source srcset="img/design9-desktop.png" media="(min-width: 1360px)" type="image/png" />
-							<img src="img/design6-tablet" alt="Дизайн" class="example__img--14" />
+							<img src="img/design6-tablet" alt="Дизайн" class="example__img--14" loading="lazy" />
 						</picture>
 					</div>
 					<div class="example__button__box pd-left-right">
@@ -472,7 +476,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="feedback">
+			<section data-watch data-watch-once class="feedback">
 				<div class="feedback__container pd-top-bottom">
 					<h2 class="feedback__title title pd-left-right">
 						Враження від дизайну
@@ -481,7 +485,7 @@
 						<div class="feedback__wrapper swiper-wrapper">
 							<div class="feedback__slide swiper-slide">
 								<div class="feedback__name__box">
-									<picture><source srcset="img/feedback1.webp" type="image/webp"><img src="img/feedback1.png" alt="Фото людини" width="63" height="63" /></picture>
+									<picture><source srcset="img/feedback1.webp" type="image/webp"><img src="img/feedback1.png" alt="Фото людини" width="63" height="63" loading="lazy" /></picture>
 									<div>
 										<h3 class="feedback__name">Марина</h3>
 										<p class="feedback__date">10.06.2023</p>
@@ -517,7 +521,7 @@
 							</div>
 							<div class="feedback__slide swiper-slide">
 								<div class="feedback__name__box">
-									<picture><source srcset="img/feedback2.webp" type="image/webp"><img src="img/feedback2.png" alt="Фото людини" width="63" height="63" /></picture>
+									<picture><source srcset="img/feedback2.webp" type="image/webp"><img src="img/feedback2.png" alt="Фото людини" width="63" height="63" loading="lazy" /></picture>
 									<div>
 										<h3 class="feedback__name">Дмитро</h3>
 										<p class="feedback__date">15.04.2023</p>
@@ -552,7 +556,7 @@
 							</div>
 							<div class="feedback__slide swiper-slide">
 								<div class="feedback__name__box">
-									<picture><source srcset="img/feedback3.webp" type="image/webp"><img src="img/feedback3.png" alt="Фото людини" width="63" height="63" /></picture>
+									<picture><source srcset="img/feedback3.webp" type="image/webp"><img src="img/feedback3.png" alt="Фото людини" width="63" height="63" loading="lazy" /></picture>
 									<div>
 										<h3 class="feedback__name">Жанна</h3>
 										<p class="feedback__date">25.02.2023</p>
@@ -695,7 +699,7 @@
 					</div>
 				</div>
 			</section>
-			<div class="form__section pd-top-bottom form__section__container">
+			<div data-watch data-watch-once class="form__section pd-top-bottom form__section__container">
 				<h2 class="title form__section__title pd-left-right">
 					Не знайшли відповідь на своє питання?
 				</h2>
@@ -709,12 +713,12 @@
 							<source srcset="img/form1__mobile.png" media="(max-width: 767px)" type="image/png" />
 							<source srcset="img/form1__tablet.png" media="(min-width: 768px) and (max-width: 1199px)" type="image/png" />
 							<source srcset="img/form1__desktop.png" media="(min-width: 1200px)" type="image/png" />
-							<img src="img/form1__mobile.png" alt="Дизайн" class="form__section__img" data-da=".form__section__container, 767" />
+							<img src="img/form1__mobile.png" alt="Дизайн" class="form__section__img" data-da=".form__section__container, 767" loading="lazy" />
 						</picture>
 						<picture>
 							<source srcset="img/form2__tablet.png" media="(min-width: 768px) and (max-width: 1199px)" type="image/png" />
 							<source srcset="img/form2__desktop.png" media="(min-width: 1200px)" type="image/png" />
-							<img src="img/form1__mobile.png" alt="Дизайн" class="form__section__img--2" data-da=".form__section__content--2, 1199" />
+							<img src="img/form1__mobile.png" alt="Дизайн" class="form__section__img--2" data-da=".form__section__content--2, 1199" loading="lazy" />
 						</picture>
 					</div>
 				</div>
@@ -735,7 +739,7 @@
 					</form>
 				</div>
 			</div>
-			<section class="contact pd-top-bottom pd-left-right contact__container">
+			<section data-watch data-watch-once class="contact pd-top-bottom pd-left-right contact__container">
 				<h2 class="title contact__title">Знайди нас тут</h2>
 				<div class="contact__content">
 					<iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.1272742927217!2d24.02121997553499!3d49.84006603112601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add71bb8b769f%3A0x9737c7983badf4b1!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgMTUsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1709126472657!5m2!1suk!2sua" width="288" height="192" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -903,7 +907,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20240303154039"></script>
+	<script src="js/app.min.js?_v=20240306210235"></script>
 </body>
 
 </html>
