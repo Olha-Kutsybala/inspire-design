@@ -385,10 +385,6 @@ textarea.input {
   gap: 1.875rem;
 }
 
-.image__mobile {
-  width: 100%;
-}
-
 .pd-left-right {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -644,6 +640,11 @@ textarea.input {
 .hero p {
   max-width: 34.375rem;
   margin-bottom: 2.5rem;
+}
+
+.hero__image__mobile {
+  display: block;
+  width: 100%;
 }
 
 .descr {
@@ -1160,10 +1161,6 @@ textarea.input {
     width: 31.25rem;
   }
 
-  .image__mobile {
-    display: none;
-  }
-
   .pd-left-right {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -1235,6 +1232,10 @@ textarea.input {
   .hero h1 {
     font-size: 3.125rem;
     margin-bottom: 1.875rem;
+  }
+
+  .hero__image__mobile {
+    display: none;
   }
 
   .descr li img {
