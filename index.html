@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-	<title>HomePage</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
+	<title>Inspire Designe</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Inspire Designe" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240306210235">
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240307171914" />
+	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
 	<div id="overlay"></div>
 	<div id="logo-container">
-		<picture><source srcset="img/first-logo.webp" type="image/webp"><img src="img/first-logo.png" alt="Лого" /></picture>
+		<picture><source srcset="img/first-logo.webp" type="image/webp"><img src="img/first-logo.png" alt="Лого" width="100%" height="auto" /></picture>
 	</div>
 	<div class="wrapper" id="content">
 		<header class="header">
@@ -24,7 +24,7 @@
 					<picture><source srcset="img/logo.webp" type="image/webp"><img class="header__logo" src="img/logo.png" alt="Лого" /></picture>
 				</a>
 				<div class="header__menu menu flex flex--gap30">
-					<button type="button" class="menu__icon icon-menu">
+					<button type="button" class="menu__icon icon-menu" aria-label="menu">
 						<span></span>
 					</button>
 					<nav class="menu__body">
@@ -41,15 +41,15 @@
 							<li class="menu__item">
 								<a href="#" data-goto=".feedback" class="menu__link">Відгуки</a>
 							</li>
-							<li class="menu__item">
-								<a href="#" data-goto=".blog" class="menu__link">Блог</a>
-							</li>
+							<!-- <li class="menu__item">
+            <a href="#" data-goto=".blog" class="menu__link">Блог</a>
+          </li> -->
 							<li class="menu__item">
 								<a href="#" data-goto=".descr" class="menu__link">Про нас</a>
 							</li>
-							<li class="menu__item">
-								<a href="#" data-goto=".faq" class="menu__link">FAQ</a>
-							</li>
+							<!-- <li class="menu__item">
+            <a href="#" data-goto=".faq" class="menu__link">FAQ</a>
+          </li> -->
 							<li class="menu__item">
 								<a href="#" data-goto=".contact" class="menu__link">Контакти</a>
 							</li>
@@ -59,17 +59,20 @@
 				<div class="flex flex--gap30" data-da=".menu, 1200, 0">
 					<ul class="social header__social flex">
 						<li>
-							<svg width="26" height="26">
-								<use xlink:href="img/icons/icons.svg#instagram"></use>
-							</svg>
+							<a href="" class="social__link" aria-label="instagram">
+								<svg width="32" height="32">
+									<use xlink:href="img/icons/icons.svg#instagram"></use>
+								</svg>
+							</a>
 						</li>
 						<li>
-							<svg width="26" height="26">
-								<use xlink:href="img/icons/icons.svg#phone"></use>
-							</svg>
+							<a href="tel:+380667853745" aria-label="phone" class="contact__list__item">
+								<svg width="32" height="32">
+									<use xlink:href="img/icons/icons.svg#phone"></use>
+								</svg></a>
 						</li>
 					</ul>
-					<button type="button" class="button button--gold" data-da=".menu__body, 767, 2">
+					<button type="button" class="button button--gold button--mobile" data-da=".menu__body, 767, 2">
 						Зв’язатись
 					</button>
 				</div>
@@ -79,51 +82,40 @@
 		<main class="page">
 			<section class="hero">
 				<div class="hero__container">
-					<div>
-						<div class="hero__content pd-left-right">
-							<h1 class="hero__title">Інтер'єр вашої мрії</h1>
-							<!-- <div class="hero__decor"> -->
-							<picture><source srcset="img/hero__tablet__decor.webp" type="image/webp"><img class="hero__decor" src="img/hero__tablet__decor.png" alt="" /></picture>
-							<!-- </div> -->
-							<p>
-								Наша компанія перетворить ваші мрії в реальність. <br />
-								Запрошуємо зробити перший крок до ідеального інтер'єру!
-							</p>
-							<button type="button" class="button button--hero">
-								Замовити консультацію
-							</button>
-						</div>
-
-						<div class="hero__image__box">
-							<picture>
-								<source srcset="img/foto1-tablet.png" media="(max-width: 768px)" type="image/png" />
-								<source srcset="img/foto1-desktop.png" media="(min-width: 1200px)" type="image/png" />
-
-								<img src="img/foto1-tablet.png" alt="Дизайн" class="image1" />
-							</picture>
-							<picture>
-								<source srcset="img/foto2-tablet.png" media="(max-width: 768px)" type="image/png" />
-								<source srcset="img/foto2-desktop.png" media="(min-width: 1200px)" type="image/png" />
-
-								<img src="img/foto2-tablet.png" alt="Дизайн" class="image2" />
-							</picture>
-						</div>
+					<div class="hero__content pd-left-right">
+						<h1 class="hero__title">Інтер'єр вашої мрії</h1>
+						<!-- <div class="hero__decor"> -->
+						<picture><source srcset="img/hero__tablet__decor.webp" type="image/webp"><img class="hero__decor" src="img/hero__tablet__decor.png" alt="" /></picture>
+						<!-- </div> -->
+						<p>
+							Наша компанія перетворить ваші мрії в реальність. <br />
+							Запрошуємо зробити перший крок до ідеального інтер'єру!
+						</p>
+						<button data-goto=".form__section" type="button" class="button button--hero">
+							Замовити консультацію
+						</button>
 					</div>
-					<div>
-						<picture>
-							<source srcset="img/foto3-tablet.png" media="(max-width: 1199px)" type="image/png" />
-							<source srcset="img/foto3-desktop.png" media="(min-width: 1200px)" type="image/png" />
+					<picture class="hero__grid--2">
+						<source srcset="img/foto3-tablet.png" media="(max-width: 1199px)" type="image/png" />
+						<source srcset="img/foto3-desktop.png" media="(min-width: 1200px)" type="image/png" />
 
-							<img src="img/foto3-tablet.png" alt="Дизайн" class="image3" />
-						</picture>
-					</div>
+						<img src="img/foto3-tablet.png" alt="Дизайн" class="hero__image3" loading="lazy" />
+					</picture>
+					<picture class="hero__grid--3">
+						<source srcset="img/foto1-tablet.png" media="(max-width: 899px)" type="image/png" />
+						<source srcset="img/foto1-desktop.png" media="(min-width: 900px)" type="image/png" />
+
+						<img src="img/foto1-tablet.png" alt="Дизайн" class="hero__image1" loading="lazy" />
+					</picture>
+					<picture class="hero__grid--4">
+						<source srcset="img/foto2-tablet.png" media="(max-width: 1199px)" type="image/png" />
+						<source srcset="img/foto2-desktop.png" media="(min-width: 1200px)" type="image/png" />
+
+						<img src="img/foto2-tablet.png" alt="Дизайн" class="hero__image2" loading="lazy" />
+					</picture>
 				</div>
+				<picture><source srcset="img/foto1-mobile.webp" type="image/webp"><img src="img/foto1-mobile.png" alt="Дизайн" class="image__mobile" width="100%" height="auto" /></picture>
 			</section>
-			<div style="
-            background-image: url(img/foto1-mobile.png);
-            min-height: 193px;
-            background-size: cover;
-          " class="image__mobile"></div>
 			<section class="descr">
 				<div class="descr__container pd-top-bottom pd-left-right">
 					<h2 class="title">Дизайн на висоті</h2>
@@ -220,7 +212,6 @@
 
 								<img src="img/descr5-mobile.png" alt="design" width="100%" loading="lazy" />
 							</picture>
-							<!-- <picture><source srcset="img/descr5-mobile.webp" type="image/webp"><img src="img/descr5-mobile.png" alt="design" /></picture> -->
 						</li>
 					</ul>
 				</div>
@@ -256,8 +247,10 @@
 								<span>Подробиці</span>
 							</button>
 							<div class="aesthetics__button__box pd-left-right">
-								<button type="button" class="button">Замовити проєкт</button>
-								<a class="aesthetics__button" href="#">
+								<button type="button" class="button" data-goto=".example">
+									Замовити проєкт
+								</button>
+								<a class="aesthetics__button" data-goto=".example" href="">
 									<svg width="26" height="26">
 										<use xlink:href="img/icons/icons.svg#download"></use>
 									</svg>
@@ -299,8 +292,10 @@
 								<span>Подробиці</span>
 							</button>
 							<div class="aesthetics__button__box pd-left-right">
-								<button type="button" class="button">Замовити проєкт</button>
-								<a class="aesthetics__button" href="#">
+								<button type="button" class="button" data-goto=".example">
+									Замовити проєкт
+								</button>
+								<a class="aesthetics__button" data-goto=".example" href="#">
 									<svg width="26" height="26">
 										<use xlink:href="img/icons/icons.svg#download"></use>
 									</svg>
@@ -361,8 +356,10 @@
 								<span>Подробиці</span>
 							</button>
 							<div class="aesthetics__button__box pd-left-right">
-								<button type="button" class="button">Замовити проєкт</button>
-								<a class="aesthetics__button" href="#">
+								<button type="button" class="button" data-goto=".example">
+									Замовити проєкт
+								</button>
+								<a class="aesthetics__button" data-goto=".example" href="#">
 									<svg width="26" height="26">
 										<use xlink:href="img/icons/icons.svg#download"></use>
 									</svg>
@@ -465,10 +462,10 @@
 						</picture>
 					</div>
 					<div class="example__button__box pd-left-right">
-						<button type="button" class="button">
+						<button data-goto=".form__section" type="button" class="button">
 							Замовити консультацію
 						</button>
-						<a class="" href="#">
+						<a class="" data-goto=".form__section" href="#">
 							<svg width="26" height="26">
 								<use xlink:href="img/icons/icons.svg#info"></use>
 							</svg>
@@ -699,7 +696,7 @@
 					</div>
 				</div>
 			</section>
-			<div data-watch data-watch-once class="form__section pd-top-bottom form__section__container">
+			<div data-watch data-watch-once class="form__section form__section__container">
 				<h2 class="title form__section__title pd-left-right">
 					Не знайшли відповідь на своє питання?
 				</h2>
@@ -742,26 +739,26 @@
 			<section data-watch data-watch-once class="contact pd-top-bottom pd-left-right contact__container">
 				<h2 class="title contact__title">Знайди нас тут</h2>
 				<div class="contact__content">
-					<iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.1272742927217!2d24.02121997553499!3d49.84006603112601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add71bb8b769f%3A0x9737c7983badf4b1!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgMTUsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1709126472657!5m2!1suk!2sua" width="288" height="192" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<iframe title="contact__map" class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.1272742927217!2d24.02121997553499!3d49.84006603112601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add71bb8b769f%3A0x9737c7983badf4b1!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgMTUsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1709126472657!5m2!1suk!2sua" width="288" height="192" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					<div>
 						<address>
 							<ul class="contact__list">
 								<li>
-									<a href="https://maps.app.goo.gl/gLsasD6VWMZvZX9X9" class="flex contact__list__item" target="_blank" rel="noopener noreferrer nofollow">
+									<a aria-label="map" href="https://maps.app.goo.gl/gLsasD6VWMZvZX9X9" class="flex contact__list__item" target="_blank" rel="noopener noreferrer nofollow">
 										<svg width="32" height="32">
 											<use xlink:href="img/icons/icons.svg#map"></use>
 										</svg>
 										м. Львів, вул. Січових Стрільців, 15</a>
 								</li>
 								<li>
-									<a href="tel:+380667853745" class="flex contact__list__item">
+									<a aria-label="phone" href="tel:+380667853745" class="flex contact__list__item">
 										<svg width="32" height="32">
 											<use xlink:href="img/icons/icons.svg#phone"></use>
 										</svg>
 										+ 380 66 785 37 45</a>
 								</li>
 								<li>
-									<a href="mailto: inspiredesign.lviv @gmail.com" lang="en" class="flex contact__list__item"><svg width="32" height="32">
+									<a aria-label="mail" href="mailto: inspiredesign.lviv @gmail.com" lang="en" class="flex contact__list__item"><svg width="32" height="32">
 											<use xlink:href="img/icons/icons.svg#mail"></use>
 										</svg>
 										inspiredesign.lviv @gmail.com</a>
@@ -769,28 +766,28 @@
 								<li>
 									<ul class="social flex contact__list__item">
 										<li class="social__item">
-											<a href="" class="social__link">
+											<a href="" class="social__link" aria-label="instagram">
 												<svg width="32" height="32">
 													<use xlink:href="img/icons/icons.svg#instagram"></use>
 												</svg>
 											</a>
 										</li>
 										<li class="social__item">
-											<a href="" class="social__link">
+											<a href="" class="social__link" aria-label="telegram">
 												<svg width="32" height="32">
 													<use xlink:href="img/icons/icons.svg#telegram"></use>
 												</svg>
 											</a>
 										</li>
 										<li class="social__item">
-											<a href="" class="social__link">
+											<a href="" class="social__link" aria-label="facebook">
 												<svg width="32" height="32">
 													<use xlink:href="img/icons/icons.svg#facebook"></use>
 												</svg>
 											</a>
 										</li>
 										<li class="social__item">
-											<a href="" class="social__link">
+											<a href="" class="social__link" aria-label="tiktok">
 												<svg width="32" height="32">
 													<use xlink:href="img/icons/icons.svg#tiktok"></use>
 												</svg>
@@ -806,6 +803,13 @@
 					</div>
 				</div>
 			</section>
+			<div class="pd-left-right back-to-top-container">
+				<button class="back-to-top hidden-scroll">
+					<svg width="50" height="50">
+						<use xlink:href="img/icons/icons.svg#arrow-up"></use>
+					</svg>
+				</button>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container pd-left-right">
@@ -817,97 +821,107 @@
 							<li class="copirate__item__text">Творчий вимір інтер'єру</li>
 							<li class="copirate__item">2035 © Усі права захищені</li>
 						</ul>
+						<div class="footer__create">
+							<a href="https://www.instagram.com/alya.mur.designer/" target="_blank" rel="noopener" class="link">
+								Designed by Alya.mur.designer
+							</a>
+							<a href="https://www.instagram.com/olya_kutsybala_sheremeta/" target="_blank" rel="noopener" class="link">
+								Developed by Olha Kutsybala
+							</a>
+						</div>
 					</div>
-					<nav class="footer__nav">
-						<ul class="footer__nav__list">
-							<li class="footer__nav__item">
-								<a href="#" data-goto=".hero" class="menu__link">Головна</a>
-							</li>
-							<li class="footer__nav__item">
-								<a href="#" data-goto=".aesthetics" class="menu__link">Послуги</a>
-							</li>
-							<li class="footer__nav__item">
-								<a href="#" data-goto=".example" class="menu__link">Проєкти</a>
-							</li>
-							<li class="footer__nav__item">
-								<a href="#" data-goto=".feedback" class="menu__link">Відгуки</a>
-							</li>
-							<li class="footer__nav__item">
-								<a href="#" data-goto=".blog" class="menu__link">Блог</a>
-							</li>
-							<li class="footer__nav__item">
-								<a href="#" data-goto=".descr" class="menu__link">Про нас</a>
-							</li>
-							<li class="footer__nav__item">
-								<a href="#" data-goto=".faq" class="menu__link">FAQ</a>
-							</li>
-							<li class="footer__nav__item">
-								<a href="#" data-goto=".contact" class="menu__link">Контакти</a>
-							</li>
-						</ul>
-					</nav>
-					<address>
-						<ul class="contact__list">
-							<li>
-								<a href="https://maps.app.goo.gl/gLsasD6VWMZvZX9X9" class="flex contact__list__item" target="_blank" rel="noopener noreferrer nofollow">
-									<svg width="24" height="24">
-										<use xlink:href="img/icons/icons.svg#map"></use>
-									</svg>
-									м. Львів, вул. Січових Стрільців, 15</a>
-							</li>
-							<li>
-								<a href="tel:+380667853745" class="flex contact__list__item">
-									<svg width="24" height="24">
-										<use xlink:href="img/icons/icons.svg#phone"></use>
-									</svg>
-									+ 380 66 785 37 45</a>
-							</li>
-							<li>
-								<a href="mailto: inspiredesign.lviv @gmail.com" lang="en" class="flex contact__list__item"><svg width="24" height="24">
-										<use xlink:href="img/icons/icons.svg#mail"></use>
-									</svg>
-									inspiredesign.lviv @gmail.com</a>
-							</li>
-							<li>
-								<ul class="social flex contact__list__item">
-									<li class="social__item">
-										<a href="" class="social__link">
-											<svg width="24" height="24">
-												<use xlink:href="img/icons/icons.svg#instagram"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="social__item">
-										<a href="" class="social__link">
-											<svg width="24" height="24">
-												<use xlink:href="img/icons/icons.svg#telegram"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="social__item">
-										<a href="" class="social__link">
-											<svg width="24" height="24">
-												<use xlink:href="img/icons/icons.svg#facebook"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="social__item">
-										<a href="" class="social__link">
-											<svg width="24" height="24">
-												<use xlink:href="img/icons/icons.svg#tiktok"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</address>
+					<div class="footer__box">
+						<nav class="footer__nav">
+							<ul class="footer__nav__list">
+								<li class="footer__nav__item">
+									<a href="#" data-goto=".hero" class="menu__link">Головна</a>
+								</li>
+								<li class="footer__nav__item">
+									<a href="#" data-goto=".aesthetics" class="menu__link">Послуги</a>
+								</li>
+								<li class="footer__nav__item">
+									<a href="#" data-goto=".example" class="menu__link">Проєкти</a>
+								</li>
+								<li class="footer__nav__item">
+									<a href="#" data-goto=".feedback" class="menu__link">Відгуки</a>
+								</li>
+								<li class="footer__nav__item">
+									<a href="#" data-goto=".blog" class="menu__link">Блог</a>
+								</li>
+								<li class="footer__nav__item">
+									<a href="#" data-goto=".descr" class="menu__link">Про нас</a>
+								</li>
+								<li class="footer__nav__item">
+									<a href="#" data-goto=".faq" class="menu__link">FAQ</a>
+								</li>
+								<li class="footer__nav__item">
+									<a href="#" data-goto=".contact" class="menu__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+						<address>
+							<ul class="contact__list">
+								<li>
+									<a aria-label="map" href="https://maps.app.goo.gl/gLsasD6VWMZvZX9X9" class="flex contact__list__item" target="_blank" rel="noopener noreferrer nofollow">
+										<svg width="24" height="24">
+											<use xlink:href="img/icons/icons.svg#map"></use>
+										</svg>
+										м. Львів, вул. Січових Стрільців, 15</a>
+								</li>
+								<li>
+									<a href="tel:+380667853745" class="flex contact__list__item" aria-label="phone">
+										<svg width="24" height="24">
+											<use xlink:href="img/icons/icons.svg#phone"></use>
+										</svg>
+										+ 380 66 785 37 45</a>
+								</li>
+								<li>
+									<a href="mailto: inspiredesign.lviv @gmail.com" lang="en" class="flex contact__list__item" aria-label="mail"><svg width="24" height="24">
+											<use xlink:href="img/icons/icons.svg#mail"></use>
+										</svg>
+										inspiredesign.lviv @gmail.com</a>
+								</li>
+								<li>
+									<ul class="social flex contact__list__item">
+										<li class="social__item">
+											<a href="" class="social__link" aria-label="instagram">
+												<svg width="24" height="24">
+													<use xlink:href="img/icons/icons.svg#instagram"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="social__item">
+											<a href="" class="social__link" aria-label="telegram">
+												<svg width="24" height="24">
+													<use xlink:href="img/icons/icons.svg#telegram"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="social__item">
+											<a href="" class="social__link" aria-label="facebook">
+												<svg width="24" height="24">
+													<use xlink:href="img/icons/icons.svg#facebook"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="social__item">
+											<a href="" class="social__link" aria-label="tiktok">
+												<svg width="24" height="24">
+													<use xlink:href="img/icons/icons.svg#tiktok"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</address>
+					</div>
 				</div>
 			</div>
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20240306210235"></script>
+	<script src="js/app.min.js?_v=20240307171914"></script>
 </body>
 
 </html>

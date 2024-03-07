@@ -385,19 +385,8 @@ textarea.input {
   gap: 1.875rem;
 }
 
-.image1 {
-  width: 178px;
-}
-
-.image2 {
-  width: 389px;
-}
-
-.image3 {
-  width: 190px;
-  -webkit-transform: translateX(6px);
-      -ms-transform: translateX(6px);
-          transform: translateX(6px);
+.image__mobile {
+  width: 100%;
 }
 
 .pd-left-right {
@@ -416,6 +405,46 @@ textarea.input {
 
 .social__link {
   fill: #fff;
+}
+
+.back-to-top-container {
+  position: relative;
+}
+
+.back-to-top {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  fill: #cba771;
+}
+
+.hidden-scroll {
+  opacity: 0%;
+}
+
+.back-to-top-icon {
+  fill: #cba771;
+}
+
+.back-to-top:hover {
+  opacity: 60%;
 }
 
 .header {
@@ -463,7 +492,7 @@ textarea.input {
 
 .menu__link {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 136%;
   letter-spacing: 0.12em;
 }
@@ -479,6 +508,17 @@ textarea.input {
 
 .footer__container {
   padding-bottom: 4.5rem;
+}
+
+.footer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
 }
 
 .footer__content {
@@ -515,6 +555,20 @@ textarea.input {
   height: 4.375rem;
 }
 
+.footer__create {
+  font-family: "Philosopher";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.625rem;
+  line-height: 136%;
+  letter-spacing: 0.12em;
+}
+
 .copirate__list {
   font-family: "Philosopher";
   display: -webkit-box;
@@ -524,9 +578,49 @@ textarea.input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2.5rem;
+  gap: 1.25rem;
   line-height: 136%;
   letter-spacing: 0.12em;
+  margin-bottom: 3.75rem;
+}
+
+.hero__content {
+  grid-area: hero__grid--1;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.hero__grid--2 {
+  grid-area: hero__grid--2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.hero__grid--3 {
+  grid-area: hero__grid--3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.hero__grid--4 {
+  grid-area: hero__grid--4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.hero__image1 {
+  width: 176px;
+  height: 391px;
+}
+
+.hero__image2 {
+  width: 387px;
+  height: 391px;
+}
+
+.hero__image3 {
+  width: 190px;
+  height: 671px;
 }
 
 .hero h1 {
@@ -550,16 +644,6 @@ textarea.input {
 .hero p {
   max-width: 34.375rem;
   margin-bottom: 2.5rem;
-}
-
-.hero__image__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-  -webkit-transform: translateX(-10px);
-      -ms-transform: translateX(-10px);
-          transform: translateX(-10px);
 }
 
 .descr {
@@ -749,6 +833,10 @@ textarea.input {
   color: #cba771;
   fill: #cba771;
   gap: 0.625rem;
+}
+
+.example {
+  line-height: 136%;
 }
 
 .example__content {
@@ -1087,12 +1175,20 @@ textarea.input {
   }
 
   .header__logo {
-    width: 6.9375rem;
+    width: 6.25rem;
     height: 4.4375rem;
   }
 
   .footer__container {
     padding-bottom: 9.375rem;
+  }
+
+  .footer__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 6.25rem;
   }
 
   .footer__content {
@@ -1101,6 +1197,19 @@ textarea.input {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 5.625rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .footer__create {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .copirate__list {
@@ -1116,12 +1225,8 @@ textarea.input {
   .hero__container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 560px 190px;
-    grid-template-columns: 560px 190px;
+        grid-template-areas: "hero__grid--1 hero__grid--1 hero__grid--2" "hero__grid--3 hero__grid--4 hero__grid--2" "hero__grid--3 hero__grid--4 hero__grid--2";
     gap: 10px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
@@ -1394,6 +1499,30 @@ textarea.input {
     margin-bottom: 3.125rem;
   }
 
+  .hero__content {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .hero__grid--2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 5;
+  }
+
+  .hero__grid--3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+
+  .hero__grid--4 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+  }
+
   .example__grid--1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -1473,23 +1602,49 @@ textarea.input {
   }
 }
 
+@media (min-width: 800px) {
+  .hero__image1 {
+    width: 100%;
+  }
+
+  .hero__image2 {
+    width: 100%;
+  }
+
+  .hero__image3 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 850px) {
+  .hero__decor {
+    width: 300px;
+  }
+}
+
+@media (min-width: 950px) {
+  .hero__decor {
+    width: 380px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero__decor {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .hero__decor {
+    width: 500px;
+  }
+}
+
 @media (min-width: 1200px) {
   .form {
     -webkit-transform: translateY(110px);
         -ms-transform: translateY(110px);
             transform: translateY(110px);
-  }
-
-  .image1 {
-    width: 100%;
-  }
-
-  .image2 {
-    width: 100%;
-  }
-
-  .image3 {
-    width: 100%;
   }
 
   .pd-left-right {
@@ -1503,20 +1658,34 @@ textarea.input {
   }
 
   .footer__container {
-    padding-bottom: 7.1875rem;
+    padding-bottom: 6.25rem;
+  }
+
+  .footer__create {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .copirate__list {
+    margin-bottom: 6.25rem;
   }
 
   .copirate__item__text {
     display: none;
   }
 
-  .hero__container {
-    -ms-grid-columns: 61% 39%;
-    grid-template-columns: 61% 39%;
+  .hero__image1 {
+    height: 400px;
   }
 
-  .hero__decor {
-    width: 300px;
+  .hero__image2 {
+    height: 400px;
+  }
+
+  .hero__image3 {
+    height: 684px;
   }
 
   .descr__container {
@@ -1590,10 +1759,6 @@ textarea.input {
 }
 
 @media (min-width: 1300px) {
-  .hero__decor {
-    width: 450px;
-  }
-
   .descr__item._watcher-view .descr__black__box {
     -webkit-transform: translateX(300px);
         -ms-transform: translateX(300px);
@@ -2001,6 +2166,10 @@ textarea.input {
     row-gap: 2.25rem;
   }
 
+  .menu__link .header {
+    font-size: 1.75rem;
+  }
+
   .icon-menu {
     display: block;
     position: relative;
@@ -2082,6 +2251,13 @@ textarea.input {
 @media (max-width: 47.99875em) {
   .form__item {
     width: 31.25rem;
+  }
+
+  .button--mobile {
+    width: 8.25rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 
   .footer__nav__list {
