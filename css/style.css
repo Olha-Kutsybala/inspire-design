@@ -637,17 +637,13 @@ textarea.input {
   z-index: 5;
 }
 
-.hero p {
-  max-width: 34.375rem;
-  margin-bottom: 2.5rem;
-}
-
 .hero__image__mobile {
   width: 100%;
 }
 
-.hero .hero__image__mobile {
-  width: 100%;
+.hero p {
+  max-width: 34.375rem;
+  margin-bottom: 2.5rem;
 }
 
 .descr {
@@ -687,7 +683,7 @@ textarea.input {
   background-color: #252525;
   padding: 0.625rem;
   width: 19.25rem;
-  z-index: 100;
+  z-index: 2;
 }
 
 .descr__item._watcher-view .descr__black__box {
@@ -1238,10 +1234,6 @@ textarea.input {
   }
 
   .hero__image__mobile {
-    display: none;
-  }
-
-  .hero .hero__image__mobile {
     display: none;
   }
 
@@ -2276,7 +2268,9 @@ textarea.input {
     display: none;
   }
 
-  .hero picture {
+  .hero__image1,
+  .hero__image2,
+  .hero__image3 {
     display: none;
   }
 
