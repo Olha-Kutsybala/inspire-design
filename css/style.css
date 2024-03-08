@@ -643,7 +643,10 @@ textarea.input {
 }
 
 .hero__image__mobile {
-  display: block;
+  width: 100%;
+}
+
+.hero .hero__image__mobile {
   width: 100%;
 }
 
@@ -1235,6 +1238,10 @@ textarea.input {
   }
 
   .hero__image__mobile {
+    display: none;
+  }
+
+  .hero .hero__image__mobile {
     display: none;
   }
 
