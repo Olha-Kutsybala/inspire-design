@@ -780,10 +780,6 @@ textarea.input {
   border-bottom: 1px solid #cba771;
 }
 
-.aesthetics ul {
-  margin-bottom: 1.25rem;
-}
-
 .aesthetics li::before {
   content: "•";
   color: #fff;
@@ -810,6 +806,7 @@ textarea.input {
           align-items: center;
   gap: 0.625rem;
   margin-bottom: 1.875rem;
+  margin-top: 1.25rem;
   font-weight: 500;
   font-size: 18px;
   line-height: 136%;
@@ -1334,6 +1331,10 @@ textarea.input {
 
   .aesthetics__box:nth-child(2n+1) .aesthetics__content {
     padding: 1.25rem 5.4375rem 1.25rem 1.5rem;
+  }
+
+  .aesthetics ul {
+    margin-bottom: 1.25rem;
   }
 
   .aesthetics button.block__more {
